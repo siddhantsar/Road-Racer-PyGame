@@ -34,7 +34,7 @@ def text_objects(text, font):
     return textSurface, textSurface.get_rect()
 
 def message_display(text):
-    largeText = pygame.font.Font("font-style.ttf", 50)
+    largeText = pygame.font.Font("font/font-style.ttf", 50)
     TextSurf, TextRect = text_objects(text, largeText)
     TextRect.center = ((display_width/2), (display_height/3.5))
     gameDisplay.blit(TextSurf, TextRect)
